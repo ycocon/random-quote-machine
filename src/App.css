@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Quicksand&family=Raleway&display=swap");
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-wrapper {
+  background-color: white;
+  padding: 2.5rem 3.125rem;
+  border-radius: 0.2rem;
+  width: 600px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#quote {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+#quote > p {
+  text-align: center;
+}
+
+#left-quote-icon {
+  margin-right: 13px;
+}
+
+#author {
+  margin-top: 1.25rem;
+}
+
+#author p {
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+#buttons {
+  margin-top: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#buttons #links a {
+  font-size: 1.25rem;
+  border-radius: 0.2rem;
+  padding: 0.65rem 0.9rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+#buttons button {
+  border-radius: 0.2rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+#buttons #links a:hover,
+#buttons button:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  :root {
+    font-size: 10px;
+  }
+
+  .quote-wrapper {
+    padding: 2.25rem 3rem;
+    width: 300px;
+  }
+}
