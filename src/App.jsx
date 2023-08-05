@@ -94,8 +94,8 @@ function App() {
         height: "100vh",
         ...color,
       }}>
-      <div className="quote-wrapper">
-        <div id="quote">
+      <div id="quote-box">
+        <div id="text">
           <p style={{ ...color, backgroundColor: "white" }}>
             <FontAwesomeIcon icon={faQuoteLeft} id="left-quote-icon" />
             {currData.text}
@@ -108,12 +108,16 @@ function App() {
         </div>
         <div id="buttons">
           <div id="links">
-            <a href={twitterUrl} style={{ ...color, color: "white" }}>
+            <a
+              id="tweet-quote"
+              href={twitterUrl}
+              style={{ ...color, color: "white" }}>
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </div>
 
           <button
+            id="new-quote"
             type="button"
             style={{ ...color, color: "white" }}
             onClick={() => handleClick()}>
